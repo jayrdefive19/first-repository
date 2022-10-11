@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Library</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+        }
+        #payform {
+            max-width: 1000px;
+            margin: auto;
+            border: 1px solid rgb(206, 206, 206);
+            margin-top: 100px;
+            background-color: rgb(245, 245, 245);
+        }
+        #nav {
+            padding: 5px;
+            background-color: rgb(7, 136, 187);
+            color: white;
+            text-align: left;
+            padding-left: 30px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        form {
+            box-sizing: border-box;
+        }
+        .inline {
+            display: inline-block;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        input {
+            width: 100%;
+           
+        }
+        .fillup {
+            width: 60%;
+            padding: 30px;
+            border-right: 1px solid #cccccc;
+            display: inline-block;
+            box-sizing: border-box;
+       
+        }
+        .ordered {
+            width: 40%;
+            float: right;
+            display: inline-block;
+            box-sizing: border-box;
+            position: relative;
+            padding: 60px;
+        }
+        img {
+            width: 100%;
+            margin: auto;
+        }
+        .searchbar {
+            right: 0px;
+            position: relative;
+        }
+        .searchbtn {
+            padding: 1px 5px 1px 5px;
+        } 
+       button {
+        padding: 10px 20px 10px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px;
+  
+       }
+       button:hover, .submitbtn:hover{
+        background-color: rgb(7, 136, 187);
+        border-color: rgb(7, 136, 187);
+        color: white;
+       }
+       table {
+        width: 100%;
+       }
+       table, td, tr {
+       padding: 10px;
+       }
+       input, select {
+        padding: 5px;
+        margin-top: 5px;
+       }
+       .button {
+        color: white;
+        background-color: rgb(7, 136, 187);
+        width: 100%;
+        font-weight: bolder;
+       }
+       .button:hover {
+        color: white;
+        background-color: rgb(223, 9, 9);
+        width: 100%;
+        font-weight: bolder;
+       }
+
+    </style>
+  </head>
+  <body>
+    <div id="payform">
+        <div id="nav"><h1>Order Payment Form</h1></div>
+        <div class="fillup">
+            <table>
+                <thead>
+                    <th colspan="3">SHIPPING DETAILS</th>
+                </thead>
+                <tr>
+                    <td colspan="2">
+                        <label for="fname">Full name:</label><br>
+                        <input type="text" id="fname" name="fname">
+                    </td>
+                    <td>
+                        <label for="contact">Contact Number:</label><br>
+                        <input type="text" id="contact" name="contact">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label for="strt">Street</label><br>
+                        <input type="text" id="strt" name="strt">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lbl">City</label><br>
+                        <input type="text" id="lbl" name="lbl">
+                    </td>
+                    <td>
+                        <label for="cnty">Country</label><br>
+                            <select style="width: 100%;" name="type">
+                                <option value="ph">Philippines</option>
+                                <option value="ph">Philippines</option>
+                              
+                            </select>
+                    </td>
+                    <td>
+                        <label for="Zip">Zip code</label><br>
+                        <input type="text" id="Zip" name="Zip">
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <thead>
+                    <th colspan="2">PAYMENT INFORMATION</th>
+                </thead>
+                <tr>
+                    <td colspan="2">
+                        <label for="crdt">Credit Card Number</label>
+                        <input type="text" id="crdt" name="crdt">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="owner">Card Holder Name</label>
+                        <input type="text" id="owner" name="owner">
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label for="expiry">Expiry Date</label>
+                        <input type="text" id="expiry" name="expiry">
+                    </td>
+                    <td >
+                        <label for="cbc">CVC</label>
+                        <input type="text" id="cbc" name="cbc">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="btn">
+                        
+                        <button onclick="alert('CHAROT LANG')" class="button">PLACE ORDER</button>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div class="ordered" style="text-align: center;">
+           <img  src="https://www.anvilpublishing.com/anvil2012/wp-content/uploads/2016/09/Noli-Me-Tangere-Cover.jpg">
+            <p>Noli me Tangere by Jose Rizal</p>
+            <p>Published Date: 1887</p>
+            <p style=" font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Php 1,000</p>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
